@@ -7,5 +7,4 @@ class ServiceAdmin(admin.ModelAdmin):
     #  mostrar informacion de campos ocultos como solo lectura
 
 # registrar modelos en el administrador
-
 admin.site.register(Service, ServiceAdmin)

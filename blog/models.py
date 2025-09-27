@@ -7,8 +7,8 @@ from django.contrib.auth.models import User
 # Create your models here.
 class Category(models.Model):
     name = models.CharField(max_length=100, verbose_name='Nombre')
-    created = models.DateTimeField(auto_now_add=True)
-    updated = models.DateTimeField(auto_now=True)
+    created = models.DateTimeField(auto_now_add=True,verbose_name='fecha de creacion')
+    updated = models.DateTimeField(auto_now=True,verbose_name='fecga de actualizacion')
 
     class Meta:
         verbose_name = 'categoria'
